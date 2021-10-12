@@ -1,0 +1,31 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js: 12
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notifications:
+  slack: cursotravispl-oj69982:80chAOzXqStXjwMnI1wVXoOv
+  email:
+    recipients:
+      - lgfigueroah98@gmail.com
+    on_success: always
+    on_failure: always
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep_history: true
+  api_key: bab92f79-0c1a-4731-b16a-dbda736d0c20
+  app: platzi-conf-merch-back-strapi
+  on:
+    repo: lgfh98/strapi-platzi-conf-merch

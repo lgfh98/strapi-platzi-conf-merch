@@ -14,7 +14,8 @@ script:
   - yarn test
 
 notifications:
-  slack: cursotravispl-oj69982:80chAOzXqStXjwMnI1wVXoOv
+  slack:
+    secure: "kpEWpMLavZYmuJ1WsTPsx/mT607jri6CWhK6F8l63LsGCR3POysp/6RNYf05A1K8RzsUAym5N+2r4ObHDsdhONF55WdIE+Sa8+3qGyQk0H0Guk+++qVD+uOZtShNmDTjToAk+QlNXuXZHfCyzhZsUOst5QwLRIM8JAX6th3nb1sbYspVaAkyxbiB8qwhmPzsRSfUubHdbjIvsJkN9+1VOuxyxiYzWHfZww47+bP7c+exfGe2jd5GO6C3lT9/bNt3J3YBM7c5zIE+8X6RjyBCESN6OF6QcyH4+gXr7kHZQdFoa3K+VHYf2eZBikt/sK1o6ClEQpexu8jsMMwqXBq5SBipoVnJVPVfEHtAopXuMT1/9bFgvQhuQ/RoqhabL/beP4efV42J2oMD79iCifrJPGizf5YQuCnlqNjLxf3PI700HNnEcW5TMDf0S1lBWLMijdZKVnoqLycVhyCIu4H08/Lc2RWJ+Lu8MmBSn8ZnjRZi2RY7AQ+aysga/hjiPkGvi/pwq4Stu6ODMFvggjduJ8uvpcYmNTUq6LUF+eifSr7f5u6U2qhRQl+rhh2SU4NZfPV5iuJPZbmDScJCaaY0dECMq+My7aV9emNMkclmVmMzBsc/SIBpoEJScUD7B45eAxLGCtzCucgnxOBnelLNk6Woi70GyIiYuzHKzvkpU3c="
   email:
     recipients:
       - lgfigueroah98@gmail.com
@@ -25,7 +26,8 @@ deploy:
   provider: heroku
   skip_cleanup: true
   keep_history: true
-  api_key: bab92f79-0c1a-4731-b16a-dbda736d0c20
+  api_key:
+    secure: "Ang8FpZAcmMWDtgt3k383pc0H0hzRcZcqmPSvxYx3bUBPDs2OQkB7GKPnQTMfoqqOOOKvgUKHE9MqGpfIN/A9Idln6fGXIJ7ag1Wx/LXWAqRLI7eDSJZ3xuF3LOZ4hFwJEyMJJFabkvIjbEYd27V2h3JpBulGd9pqJolBSGCyepx2/8AJO/IXMxZgR+Zhq/2u3Hje9xh5gotJ3nsV/+am87XgoeH6uc+PP7Da8Srow1gI4y6E2bsZtJry7G9RRHCF3NrfyhXuuGVZLAnDItiCzs+u08aHFosrPvViGwft7yfxKnnbICTPE/kg/emLHR0CBiMtIT8IHUi+DELkZiB2WhLotPvB0nrOD6Q4Som0hBEybq2yrGMUtIYBfZ1FXFPIv2jkhPaSc0lr791tj00JiJwy+iX8QBV6oihC3JlVaSAQOXbCiqPO/NZF8BAV70blIP5viH9OnSdQiGyLyzAeNsRPDunJAbTgkOBqitjvHyGtLjZPJNbhV8QuSkhb6iu1odyWkwVH8cEo7fwlXhTOV8UZEvEI9N39wOCW2pEqa162PT5KL1+ymF1iixjZMJbbWrQrjLGYfpM7jY3JJKFBl/jm8aZ8otQOoFLXdKk/c+CMMaBJHYqBMssObyoPPTsBBFj2bDyKwvoABc1PM5DR/K4PfOHKAKwQZSlv8oLew8="
   app: platzi-conf-merch-back-strapi
   on:
     repo: lgfh98/strapi-platzi-conf-merch
